@@ -1,0 +1,291 @@
+							<div id="content" class="span10">
+								<!-- start: Content -->
+
+								<div>
+									<hr>
+									<ul class="breadcrumb">
+										<li>
+											<a href="#">Home</a> <span class="divider">/</span>
+										</li>
+										<li>
+											<a href="#">Mingoville global stats</a>
+										</li>
+									</ul>
+									<hr>
+								</div>
+								<hr>
+
+
+								<div class="row-fluid sortable">	
+
+
+									<div class="box span4" onTablet="span6" onDesktop="span4">
+										<div class="box-header">
+											<h2><i class="icon-list"></i><span class="break"></span>Institutional Users</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<ul class="dashboard-list">
+												<li>
+													<a href="#">
+														<i class="fa-icon-user green"></i>                               
+														<span class="green"><%=@mingILic.inspect%></span>
+														Licensed Users                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user yellow"></i>                               
+														<span class="yellow"><%=@mingIAccounts.inspect%></span>
+														Total Active Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user blue"></i>                               
+														<span class="blue"><%=@mingITAccounts.inspect%></span>
+														Total Registered Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@mingNIUsers.inspect%></span>
+														New Licenses (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@mingNIAccounts.inspect%></span>
+														New Accounts (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@mingLILic.inspect%></span>
+														Expiring Licenses (past 7 days)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@mingLIAccounts.inspect%></span>
+														Expiring Accounts (past 7 days)
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div><!--/span-->
+
+									<div class="box span4" onTablet="span6" onDesktop="span4">
+										<div class="box-header">
+											<h2><i class="icon-list"></i><span class="break"></span>Private Users</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<ul class="dashboard-list">
+												<li>
+													<a href="#">
+														<i class="fa-icon-user green"></i>                               
+														<span class="green"><%=@mingPayUsers.inspect%></span>
+														Paying Users                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user green"></i>                               
+														<span class="green"><%=@mingPLic.inspect%></span>
+														Licensed Users                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user yellow"></i>                               
+														<span class="yellow"><%=@mingPAccounts.inspect%></span>
+														Total Active Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user blue"></i>                               
+														<span class="blue"><%=@mingPTAccounts.inspect%></span>
+														Total Registered Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@mingNPayUsers.inspect%></span>
+														New Paying Users (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@mingNPUsers.inspect%></span>
+														New Licenses (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@mingNPAccounts.inspect%></span>
+														New Accounts (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@mingLPayUsers.inspect%></span>
+														Leaving Paying Users (past 7 days)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@mingLPLic.inspect%></span>
+														Expiring Licenses (past 7 days)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@mingLPAccounts.inspect%></span>
+														Expiring Accounts (past 7 days)
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div><!--/span-->
+
+									<div class="box span4" onTablet="span6" onDesktop="span4">
+										<div class="box-header">
+											<h2><i class="icon-list"></i><span class="break"></span>Trial Users</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<ul class="dashboard-list">
+												<li>
+													<a href="#">
+														<i class="fa-icon-user green"></i>                               
+														<span class="green"><%=@mingFTrials.inspect%></span>
+														Total Active Trial Licenses                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user yellow"></i>                               
+														<span class="yellow"><%=@mingFUsers.inspect%></span>
+														Total Active Accounts                                  
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user blue"></i>                               
+														<span class="blue"><%=@mingFAccounts.inspect%></span>
+														Total Registered Accounts                                  
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@mingNFUsers.inspect%></span>
+														New Accounts (past 7 days)                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@mingLFTrials.inspect%></span>
+														Expiring Trial Licenses (past 7 days)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@mingLFUsers.inspect%></span>
+														Expiring Accounts (past 7 days)
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div><!--/span-->
+
+									
+								</div>	<!--/row shortable-->
+
+								<%= javascript_tag do %>
+									window.date1 = new Date( <%=@date1.to_time.to_i%> * 1000)
+									window.date2 = new Date( <%=@date2.to_time.to_i%> * 1000)
+									window.mingo = <%=@mingInstTraffic.to_json %>;
+									window.skol = <%= @mingPrivTraffic.to_json %>;
+									window.mond = <%= @mingFreeTraffic.to_json %>;
+									window.lab1 = "Institutional Accounts";
+									window.lab2 = "Private Accounts";
+									window.lab3 = "Free Trial Accounts";
+								<% end %>
+								<div class="row-fluid sortable">
+
+									<div class="box">
+										<div class="box-header">
+											<h2><i class="icon-list-alt"></i><span class="break"></span>Logins Activity</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<div id="stats-chart"  class="center" style="height:300px;" ></div>
+											<p id="hoverdata"><span id="y">0</span>. <span id="clickdata"></span></p>
+										</div>
+									</div>
+
+							
+
+								</div><!--/row-->
+									<%= javascript_tag do %>
+
+										window.date3 = new Date( <%=(Date.today - 29).to_time.to_i%> * 1000)
+										window.date4 = new Date( <%=Date.today.to_time.to_i%> * 1000)
+  										window.lastm = <%= @lastMonth.to_json %>;
+  										window.currentm = <%= @currentMonth.to_json %>;
+  										window.labm = "Last Month Average Income";
+  										window.labc = "Daily Income";
+									<% end %>
+									<div class="row-fluid">
+
+										<div class="box">
+											<div class="box-header">
+												<h2><i class="icon-list-alt"></i><span class="break"></span>Income (DKK)</h2>
+												<div class="box-icon">
+													<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+													<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+												</div>
+											</div>
+											<div class="box-content">
+												<div id="stats-chart2"  class="center" style="height:300px;" ></div>
+											</div>
+										</div>
+									</div><!--/row-->
+
+								<!-- UPDATE CHARTS FORM -->
+								<%= form_tag do %>			
+ 									From: <br><%= select_date @date1, :prefix => :start_date %><br>
+									To:   <br><%= select_date @date2, :prefix => :end_date %><br>
+									<%= submit_tag("Update Chart", :class => "btn btn-large btn-info") %>
+								<% end %>
+
+
+										<hr>							
+							</div><!--/#content.span10-->

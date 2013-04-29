@@ -1,0 +1,92 @@
+							<div id="content" class="span10">
+								<!-- start: Content -->
+
+								<div>
+									<hr>
+									<ul class="breadcrumb">
+										<li>
+											<a href="#">Home</a> <span class="divider">/</span>
+										</li>
+										<li>
+											<a href="#">Mondiso Transactions Activity</a>
+										</li>
+									</ul>
+									<hr>
+								</div>
+								<hr>
+								<%= javascript_tag do %>
+								window.country1 = new Array( "<%=@mondCountries[0]%>"<%for x in 1..(@mondCountries.size-1) do%>,"<%=@mondCountries[x]%>"<%end%>);
+								window.date1 = new Date( <%=@date1.to_time.to_i%> * 1000)
+								window.date2 = new Date( <%=@date2.to_time.to_i%> * 1000)
+								window.trans1 = <%= 0 %>;
+								window.trans2 = <%= 0 %>;
+								window.trans3 = <%= @mondTransactions.to_json %>;
+								
+								<% end %>
+								<!-- Transactions table -->
+								<div class="box">
+									<div class="box-header">
+										<h2><i class="icon-list-alt"></i><span class="break"></span>Transactions Activity</h2>
+										<div class="box-icon">
+											<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+											<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+										</div>
+									</div>
+									<div class="box-content">
+										<div id="stackchart" class="center" style="height:300px;"></div>
+
+										<p class="stackControls center">
+											<input class="btn" type="button" value="With stacking">
+											<input class="btn" type="button" value="Without stacking">
+										</p>
+
+										<p class="graphControls center">
+											<input class="btn-primary" type="button" value="Bars">
+											<input class="btn-primary" type="button" value="Lines">
+											<input class="btn-primary" type="button" value="Lines with steps">
+										</p>
+									</div>
+								</div>
+
+								<%= javascript_tag do %>
+								window.days = <%= @date2 - @date1%>
+								window.lab6 = "12 Months";
+								window.three = <%=@three%>;
+								window.six = <%=@six%>;
+								window.twelve = <%=@twelve%>;
+								<% end %>
+
+
+								<div class="box">
+									<div class="box-header">
+										<h2><i class="icon-list-alt"></i><span class="break"></span>Transactions</span></h2>
+										<div class="box-icon">
+											<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+											<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+										</div>
+									</div>
+									<div class="box-content">
+										Total transactions: <span class="green"><%=@three + @six + @twelve%></span> 
+										<br>  Total income: <span class="green"><%=@income%> USD</span>
+										<div id="piechart" style="height:300px"></div>
+									</div>
+
+								</div>
+						
+
+											<!-- UPDATE CHARTS FORM -->
+								<%= form_tag do %>			
+ 									From: <br><%= select_date @date1, :prefix => :start_date %><br>
+									To:   <br><%= select_date @date2, :prefix => :end_date %><br>
+									<%= submit_tag("Update Chart", :class => "btn btn-large btn-info") %>
+								<% end %>
+
+							<hr>
+
+								</div><!--/row-->
+
+								
+
+
+																	
+							</div><!--/#content.span10-->

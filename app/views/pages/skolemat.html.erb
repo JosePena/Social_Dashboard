@@ -1,0 +1,277 @@
+							<div id="content" class="span10">
+								<!-- start: Content -->
+
+								<div>
+									<hr>
+									<ul class="breadcrumb">
+										<li>
+											<a href="#">Home</a> <span class="divider">/</span>
+										</li>
+										<li>
+											<a href="#">Skolemat Global stats</a>
+										</li>
+									</ul>
+									<hr>
+								</div>
+
+
+								<hr>
+
+								<div class="row-fluid sortable">	
+
+
+									<div class="box span4" onTablet="span6" onDesktop="span4">
+										<div class="box-header">
+											<h2><i class="icon-list"></i><span class="break"></span>Institutional Users</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<ul class="dashboard-list">
+												<li>
+													<a href="#">
+														<i class="fa-icon-user green"></i>                               
+														<span class="green"><%=@skolILic.inspect%></span>
+														Licensed Users                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user yellow"></i>                               
+														<span class="yellow"><%=@skolIAccounts.inspect%></span>
+														Total Active Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user blue"></i>                               
+														<span class="blue"><%=@skolITAccounts.inspect%></span>
+														Total Registered Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@skolNIUsers.inspect%></span>
+														New Licenses (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@skolNIAccounts.inspect%></span>
+														New Accounts (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@skolLILic.inspect%></span>
+														Expiring Licenses (past 7 days)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@skolLIAccounts.inspect%></span>
+														Expiring Accounts (past 7 days)
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div><!--/span-->
+
+									<div class="box span4" onTablet="span6" onDesktop="span4">
+										<div class="box-header">
+											<h2><i class="icon-list"></i><span class="break"></span>Private Users</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<ul class="dashboard-list">
+												<li>
+													<a href="#">
+														<i class="fa-icon-user green"></i>                               
+														<span class="green"><%=@skolPayUsers.inspect%></span>
+														Paying Users                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user green"></i>                               
+														<span class="green"><%=@skolPLic.inspect%></span>
+														Licensed Users                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user yellow"></i>                               
+														<span class="yellow"><%=@skolPAccounts.inspect%></span>
+														Total Active Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user blue"></i>                               
+														<span class="blue"><%=@skolPTAccounts.inspect%></span>
+														Total Registered Accounts                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@skolNPayUsers.inspect%></span>
+														New Paying Users (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@skolNPUsers.inspect%></span>
+														New Licenses (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@skolNPAccounts.inspect%></span>
+														New Accounts (past 7 days)                                   
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@skolLPayUsers.inspect%></span>
+														Leaving Paying Users (past 7 days)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@skolLPLic.inspect%></span>
+														Expiring Licenses (past 7 days)
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@skolLPAccounts.inspect%></span>
+														Expiring Accounts (past 7 days)
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div><!--/span-->
+
+									<div class="box span4" onTablet="span6" onDesktop="span4">
+										<div class="box-header">
+											<h2><i class="icon-list"></i><span class="break"></span>Trial Users</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<ul class="dashboard-list">
+												<li>
+													<a href="#">
+														<i class="fa-icon-user yellow"></i>                               
+														<span class="yellow"><%=@skolFUsers.inspect%></span>
+														Total Active Accounts                                  
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-user blue"></i>                               
+														<span class="blue"><%=@skolFAccounts.inspect%></span>
+														Total Registered Accounts                                  
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-up green"></i>                               
+														<span class="green"><%=@skolNFUsers.inspect%></span>
+														New Accounts (past 7 days)                                    
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa-icon-arrow-down red"></i>
+														<span class="red"><%=@skolLFUsers.inspect%></span>
+														Expiring Accounts (past 7 days)
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div><!--/span-->
+
+								</div>	<!--/row shortable-->
+								<%= javascript_tag do %>
+									window.date1 = new Date( <%=@date1.to_time.to_i%> * 1000)
+									window.date2 = new Date( <%=@date2.to_time.to_i%> * 1000)
+									window.mingo = <%=@skolInstTraffic.to_json %>;
+									window.skol = <%= @skolPrivTraffic.to_json %>;
+									window.mond = <%= @skolFreeTraffic.to_json %>;
+									window.lab1 = "Institutional Accounts";
+									window.lab2 = "Private Accounts";
+									window.lab3 = "Free Trial Accounts";
+								<% end %>
+
+								<div class="row-fluid sortable">
+
+									<div class="box">
+										<div class="box-header">
+											<h2><i class="icon-list-alt"></i><span class="break"></span>Logins Activity</h2>
+											<div class="box-icon">
+												<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+												<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+											</div>
+										</div>
+										<div class="box-content">
+											<div id="stats-chart"  class="center" style="height:300px;" ></div>
+											<p id="hoverdata"><span id="y">0</span>. <span id="clickdata"></span></p>
+											
+										</div>
+									</div>
+
+								</div><!--/row-->
+								<%= javascript_tag do %>
+
+										window.date3 = new Date( <%=(Date.today - 29).to_time.to_i%> * 1000)
+										window.date4 = new Date( <%=Date.today.to_time.to_i%> * 1000)
+  										window.lastm = <%= @lastMonth.to_json %>;
+  										window.currentm = <%= @currentMonth.to_json %>;
+  										window.labm = "Last Month Average Income";
+  										window.labc = "Daily Income";
+									<% end %>
+									<div class="row-fluid">
+
+										<div class="box">
+											<div class="box-header">
+												<h2><i class="icon-list-alt"></i><span class="break"></span>Income (DKK)</h2>
+												<div class="box-icon">
+													<a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+													<a href="#" class="btn-close"><i class="icon-remove"></i></a>
+												</div>
+											</div>
+											<div class="box-content">
+												<div id="stats-chart2"  class="center" style="height:300px;" ></div>
+											</div>
+										</div>
+									</div><!--/row-->
+
+								<!-- UPDATE CHARTS FORM -->
+								<%= form_tag do %>			
+ 									From: <br><%= select_date @date1, :prefix => :start_date %><br>
+									To:   <br><%= select_date @date2, :prefix => :end_date %><br>
+									<%= submit_tag("Update Chart", :class => "btn btn-large btn-info") %>
+								<% end %>
+									
+
+
+									<hr>							
+							</div><!--/#content.span10-->
