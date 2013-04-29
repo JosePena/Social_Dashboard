@@ -621,52 +621,6 @@ end
 
 
 def mingo_zone_distribution
-  require 'date'   
-  # Update Charts Form
-    if params.has_key?(:start_date)
-      @date1 = Date.civil(params[:start_date][:year].to_i, params[:start_date][:month].to_i, params[:start_date][:day].to_i)
-    else 
-      @date1 = Date.today - 29
-    end
-    if params.has_key?(:end_date)
-      @date2 = Date.civil(params[:end_date][:year].to_i, params[:end_date][:month].to_i, params[:end_date][:day].to_i)
-    else 
-      @date2 = Date.today
-    end
-
-
-  #activs = Mingoville::UserActivity.select("DISTINCT user_id").where("date_time > ? and date_time< ?", @date1, @date2)
-
-  names = Array.new()
-  #times = Array.new()
-  trans = Array.new()
-  #j = 0
-  #activs.each do |i|
-  #  if(i.user != nil)
-  #    aux = i.user.country.country
-  #    if names.include? aux
-  #      x = names.index(aux)
-  #      times[x] = times[x] + 1
-  #    else
-  #      names[j] = aux
-  #      times[j] = 1
-  #      trans[j] = Appdb::MingoTransaction.where("date > ? and date< ? and country = ?", @date1, @date2, aux).size
-  #      j = j + 1
-  #    end
-  #  end
-  #end
-  activs = Appdb::MingoTransaction.select("country, COUNT(id) as total" ).where("date > ? and date< ?", @date1, @date2).group("country")
-  j = 0
-  activs.each do |i|
-    names[j] = i.country
-    trans[j] = i.total
-    j = j+1
-  end
-
-
-  @names = names
-  #@times = times
-  @trans = trans
 end
 
 
@@ -674,48 +628,6 @@ end
 
 
 def mond_zone_distribution
-  require 'date'   
-  # Update Charts Form
-    if params.has_key?(:start_date)
-      @date1 = Date.civil(params[:start_date][:year].to_i, params[:start_date][:month].to_i, params[:start_date][:day].to_i)
-    else 
-      @date1 = Date.today - 29
-    end
-    if params.has_key?(:end_date)
-      @date2 = Date.civil(params[:end_date][:year].to_i, params[:end_date][:month].to_i, params[:end_date][:day].to_i)
-    else 
-      @date2 = Date.today
-    end
-
-
-  activs = Mondiso::UserActivity.select("DISTINCT user_id").where("date_time > ? and date_time< ?", @date1, @date2)
-
-  names = Array.new()
-  times = Array.new()
-  trans = Array.new()
-  j = 0
-  activs.each do |i|
-    if(i.user != nil)
-      if i.user.country !=  nil
-        aux = i.user.country.country_before_type_cast
-        if names.include? aux
-         x = names.index(aux)
-         times[x] = times[x] + 1
-         trans[x] = trans[x] + i.user.transactions.where("created > ? and created< ?", @date1, @date2).size
-        else
-         names[j] = aux
-         times[j] = 1
-         trans[j] = i.user.transactions.where("created > ? and created< ?", @date1, @date2).size
-         j = j + 1
-        end
-      end
-    end
-  end
-
-  @names = names
-  @times = times
-  @trans = trans
-
 end
 
 

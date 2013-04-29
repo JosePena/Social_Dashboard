@@ -36,14 +36,15 @@
 													</tr>
 												</thead>   
 												<tbody>
-													<% @mingPopGames.each do |i| %>
-
+													<%i = 0  
+													while i < 10  
+  													i += 1    %>
 													<tr>
-														<td><%= i.name %>   </td>
-														<td class="center"><%= i.plays %></td>
-														<td class="center"><%= i.users %></td>
-													</tr>											 
-													<% end %>
+														<td>Game <%=i.inspect%></td>
+															<td class="center"><%=rand(1000)%></td>
+															<td class="center"><%=rand(500)%></td>
+															</tr>											 
+															<% end %>
 												</tbody>
 											</table>            
 										</div>
@@ -67,13 +68,14 @@
 													</tr>
 												</thead>   
 												<tbody>
-													<% @mingProducts.each do |i| %>
-
+													<%i = 0  
+													while i < 10  
+  													i += 1    %>
 													<tr>
-														<td><%= i.name %>   </td>
-														<td class="center"><%= i.times %></td>
-													</tr>											 
-													<% end %>
+														<td>Item <%=i.inspect%></td>
+															<td class="center"><%=rand(500)%></td>
+															</tr>											 
+															<% end %>
 												</tbody>
 											</table>            
 										</div>

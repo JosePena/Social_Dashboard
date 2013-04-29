@@ -35,12 +35,13 @@
 													</tr>
 												</thead>   
 												<tbody>
-													<%@mondPopGames.each do |g|  %>
-
+													<%i = 0  
+													while i < 10  
+  													i += 1    %>
 													<tr>
-														<td><%=g.name%></td>
-															<td class="center"><%=g.plays%></td>
-															<td class="center"><%=g.users%></td>
+														<td>Game <%=i.inspect%></td>
+															<td class="center"><%=rand(1000)%></td>
+															<td class="center"><%=rand(500)%></td>
 															</tr>											 
 															<% end %>
 														</tbody>
